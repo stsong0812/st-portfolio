@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light Mode Base */
+html, body {
+  @apply bg-white text-gray-900 antialiased;
+  background-color: #ffffff !important;
+}
+
+.bg-noise,
+.holo-fade,
+.cyber-grid,
+.particles {
+  display: none !important;
+}
+
+.section-fade {
+  background: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
