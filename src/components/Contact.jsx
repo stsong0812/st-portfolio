@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="flex justify-center">
         <div className="max-w-lg text-center space-y-6 text-gray-700">
           <p className="text-lg">
-            I’m always open to discussing cybersecurity projects, research,
+            I'm always open to discussing cybersecurity projects, research,
             internships, or full-time opportunities. Feel free to reach out
             through any of the channels below.
           </p>
@@ -45,7 +45,7 @@ export default function Contact() {
           {/* Resume Download */}
           <div>
             <a
-              href="/Resume - Steven Song.pdf"
+              href="/Steven_Song_Resume.pdf"
               download
               className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition"
             >
