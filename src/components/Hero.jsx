@@ -31,25 +31,29 @@ export default function Hero() {
     <section
       id="home"
       className="
-        relative w-full min-h-screen flex items-center
+        relative w-full
+        min-h-[100svh]
+        lg:min-h-screen
+        flex items-center
         bg-cover bg-center bg-no-repeat
       "
       style={{ backgroundImage: "url('/hero-bg.png')" }}
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Main Content */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 flex justify-center md:justify-start">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-16 md:py-20 lg:py-24 lg:pb-32 flex justify-center md:justify-start">
         <div
           className="
             space-y-6 text-white text-center md:text-left
             drop-shadow-[0_0_6px_rgba(0,0,0,0.6)]
-            md:translate-x-[-300px]
+            md:max-w-xl
+            lg:max-w-2xl
+            lg:translate-x-[-160px]
+            xl:translate-x-[-220px]
           "
         >
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-blue-300">
-            Cybersecurity · SOC · Vulnerability Management
+            Information Technology · Cybersecurity
           </p>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
@@ -57,17 +61,17 @@ export default function Hero() {
           </h1>
 
           <h2 className="text-base sm:text-lg md:text-2xl text-gray-200">
-            Cybersecurity Student & Analyst
+            C.S. New Grad & Aspiring Cybersecurity Professional
           </h2>
 
           <p className="font-mono text-xs sm:text-sm text-gray-300 leading-relaxed max-w-xl mx-auto md:mx-0">
             <span className="text-blue-400">&gt;</span> Focused on{" "}
             <span className="text-blue-300 tracking-wide">
-              SOC, Threat Analysis, and Vulnerability Management
+              IT, Cloud, and Cybersecurity
             </span>
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 pt-4">
+          <div className="flex flex-col sm:flex-row items-center sm:items-center gap-6 pt-4">
             <a
               href="#projects"
               className="
@@ -82,10 +86,16 @@ export default function Hero() {
 
             <div className="flex gap-5 text-blue-300 text-2xl">
               {[
-                { Icon: FaLinkedin, href: "https://www.linkedin.com/in/stsong0812" },
+                {
+                  Icon: FaLinkedin,
+                  href: "https://www.linkedin.com/in/stsong0812",
+                },
                 { Icon: FaGithub, href: "https://github.com/stsong0812" },
                 { Icon: SiTryhackme, href: "https://tryhackme.com/p/scanttk" },
-                { Icon: SiHackthebox, href: "https://app.hackthebox.com/users/1065634" },
+                {
+                  Icon: SiHackthebox,
+                  href: "https://app.hackthebox.com/users/1065634",
+                },
               ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
@@ -102,7 +112,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scrolling Skills Bara*/}
       <div className="absolute bottom-0 left-0 w-full z-20 overflow-hidden">
         <div className="bg-blue-900/30 backdrop-blur-md border-t border-blue-400/30">
           <div className="flex whitespace-nowrap animate-scroll gap-10 py-4 px-6 font-mono text-sm tracking-widest text-blue-200">
